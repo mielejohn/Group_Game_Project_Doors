@@ -1,10 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BackDoorMoving.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Doors.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameController.cs" Line="12" Column="75" />
-      <File FileName="Assets\Scripts\Doors.cs" Line="71" Column="72" />
-      <File FileName="Assets\Scripts\BackDoorMoving.cs" Line="24" Column="5" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="37" Column="19" />
+      <File FileName="Assets\Scripts\Doors.cs" Line="89" Column="5" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="30" Column="15" />
+      <File FileName="Assets\Scripts\FadingScreen.cs" Line="19" Column="75" />
+      <File FileName="Assets\Scripts\DeadBolt.cs" Line="5" Column="40" />
+      <File FileName="Assets\Scripts\SecurityLock_Door_Section.cs" Line="12" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
