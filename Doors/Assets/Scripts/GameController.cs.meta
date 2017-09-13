@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c24e16085bdfbc4cad9a2d27123c2e5
+timeCreated: 1505097293
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - PlainDoor: {fileID: 100000, guid: 2b128ef79f1ca7c428f68a67379492b8, type: 3}
+  - DoorSpawn: {fileID: 1695503932750798, guid: 5b0d52f5f47f2f640b55d098721c54cd,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
