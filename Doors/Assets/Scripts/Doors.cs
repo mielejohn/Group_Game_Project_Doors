@@ -7,12 +7,10 @@ public class Doors : MonoBehaviour
 
 	public GameObject GC;
 	public GameObject Door;
-	//public DoorPrefab DP;
 	public GameObject CC;
 
 	public bool RotationBool;
 	public Transform target;
-	//public float speed;
 	public int TotalLocks;
 	public int UnLockedLocks;
 	public bool LockCheckVar;
@@ -22,6 +20,7 @@ public class Doors : MonoBehaviour
 
 	void Start () 
 	{
+		
 	}
 
 	void Update()
@@ -42,6 +41,8 @@ public class Doors : MonoBehaviour
 
 		if(RotationBool == true){
 			this.transform.Rotate (new Vector3(0,90,0)*Time.deltaTime);
+			GC.gameObject.GetComponent<GameController> ().TimerStop ();
+			GC.gameObject.GetComponent<GameController> ().HideInstructions ();
 			StartCoroutine (wait ());
 		} 
 	}
@@ -74,18 +75,8 @@ public class Doors : MonoBehaviour
 		yield return new WaitForSeconds (1);
 		CC.GetComponent<CameraController>().StartCoroutine(CC.GetComponent<CameraController>().AnimationStart());
 		yield return new WaitForSeconds (3);
-		//GC.GetComponent<GameController> ().DoorChoice ();
-		//GC.GetComponent<GameController> ().LockChoice ();
-
-		Door.transform.DetachChildren();
-		Destroy (GameObject.FindGameObjectWithTag ("Lock"));
+		GC.GetComponent<GameController> ().DoorUnlocked ();
 		Destroy (Door);
-		//yield return new WaitForSeconds (2);
-		//GC.GetComponent<GameController> ().Door_Choice ();
 	}
-
-	/*void onDestroy(){
-		GC.GetComponent<GameController> ().Door_Choice ();
-	}*/
 }
 

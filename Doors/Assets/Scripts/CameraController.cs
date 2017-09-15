@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour {
 
+	public GameObject GC;
 	public GameObject FadeScreen;
 	public Image BlackFade; 
 	public bool Fade;
