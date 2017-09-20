@@ -60,6 +60,8 @@ public class Doors : MonoBehaviour
 	}
 
 	public void UnlockLock(){
+		GC.GetComponent<GameController> ().CodeTimer = 0;
+		GC.GetComponent<GameController> ().playUnLockSound ();
 		UnLockedLocks++;
 	}
 
@@ -75,6 +77,7 @@ public class Doors : MonoBehaviour
 		yield return new WaitForSeconds (1);
 		CC.GetComponent<CameraController>().StartCoroutine(CC.GetComponent<CameraController>().AnimationStart());
 		yield return new WaitForSeconds (3);
+		Debug.Log ("Calling Doorunlocked from the Doors script");
 		GC.GetComponent<GameController> ().DoorUnlocked ();
 		Destroy (Door);
 	}

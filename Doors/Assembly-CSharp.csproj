@@ -49,10 +49,17 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DeadBolt.cs" />
      <Compile Include="Assets\Scripts\Doors.cs" />
+     <Compile Include="Assets\Scripts\ElectricLock.cs" />
      <Compile Include="Assets\Scripts\FadingScreen.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HandleLock.cs" />
      <Compile Include="Assets\Scripts\SecurityLock_Door_Section.cs" />
+     <Compile Include="Assets\Scripts\SpecialDoor01.cs" />
+     <Compile Include="Assets\Scripts\SpecialDoor01Knob.cs" />
+     <Compile Include="Assets\Scripts\SpecialDoor02.cs" />
+     <Compile Include="Assets\Scripts\SpecialDoor02_knob.cs" />
+     <Compile Include="Assets\Scripts\SpecialDoor03.cs" />
+     <Compile Include="Assets\Scripts\SpinLock.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
